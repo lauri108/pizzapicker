@@ -38,7 +38,19 @@ li {
      padding: 0.5em;
      margin: 0.5em;
 }
+span {
+     font-size: .5em;
+}
 li:hover {
      background-color: lightgrey;
      cursor: pointer;
+}
+
+.total {
+     display: flex;
+     justify-content: center;
+}
+
+.total h3 {
+     margin: 0.5em 0;
 }
