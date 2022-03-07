@@ -3,7 +3,6 @@ let cost = 10
 let total = document.querySelector('#cost')
 total.innerHTML = cost
 
-// variables to measure times clicked
 
 // add event listeners for each topping
 document.querySelector('#choosePepperoni').addEventListener('click', addPepperoni)
