@@ -23,6 +23,8 @@ h1 {
      text-align: center;
      font-size: 2.5em;
      margin: 0;
+     position: absolute;
+     left: 100vh;
 }
 i {
      color: rgb(180, 18, 18);
@@ -31,6 +33,8 @@ ul {
      list-style-type: none;
      position: absolute;
      left: 100vh;
+     top: 2em;
+     padding: 0;
 }
 li {
      border: 2px solid black;
@@ -53,4 +57,38 @@ li:hover {
 
 .total h3 {
      margin: 0.5em 0;
+}
+
+
+/* Responsive */
+
+@media all and (max-width:800px){
+     
+     body {
+          display:flex;
+          flex-flow: column;
+          align-items: center;
+     }
+     h1{
+          position:inherit;
+     }
+     .pizza>img {
+          top: 3em;
+          width: 100vw;
+     }
+     ul {
+          position: absolute;
+          top: 110vw;
+          left:0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+     }
+     ul>h3{
+          text-align: center;
+          flex-basis: 100%;
+     }
+     .total{
+          flex-basis: 100%;
+     }
 }

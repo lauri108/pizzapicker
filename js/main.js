@@ -1,7 +1,9 @@
+// assign starting price
 let cost = 10
 let total = document.querySelector('#cost')
 total.innerHTML = cost
 
+// 
 let timesClickedPepperoni = 0
 let timesClickedSausage = 0
 let timesClickedOlives = 0
@@ -12,7 +14,7 @@ let timesClickedTomatoes = 0
 let timesClickedMushrooms = 0
 let timesClickedPineapple = 0
 
-
+// add event listeners for each topping
 document.querySelector('#choosePepperoni').addEventListener('click', addPepperoni)
 document.querySelector('#chooseSausage').addEventListener('click', addSausage)
 document.querySelector('#chooseOlives').addEventListener('click', addOlives)
@@ -23,6 +25,7 @@ document.querySelector('#chooseTomatoes').addEventListener('click', addTomatoes)
 document.querySelector('#chooseMushrooms').addEventListener('click', addMushrooms)
 document.querySelector('#choosePineapple').addEventListener('click', addPineapple)
 
+// functions for each topping button to toggle images and adust price
 function addPepperoni(){
     document.querySelector('#pepperoni').classList.toggle('hidden')
     timesClickedPepperoni = timesClickedPepperoni + 1
@@ -51,10 +54,10 @@ function addOlives(){
     document.querySelector('#olives').classList.toggle('hidden')
     timesClickedOlives = timesClickedOlives + 1
     if (timesClickedOlives%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--  
     }
     total.innerHTML = cost
 }
@@ -63,10 +66,10 @@ function addOnions(){
     document.querySelector('#onions').classList.toggle('hidden')
     timesClickedOnions = timesClickedOnions + 1
     if (timesClickedOnions%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--
     }
     total.innerHTML = cost
 }
@@ -75,10 +78,10 @@ function addPeppers(){
     document.querySelector('#peppers').classList.toggle('hidden')
     timesClickedPeppers = timesClickedPeppers + 1
     if (timesClickedPeppers%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--   
     }
     total.innerHTML = cost
 }
@@ -87,10 +90,10 @@ function addSpinach(){
     document.querySelector('#spinach').classList.toggle('hidden')
     timesClickedSpinach = timesClickedSpinach + 1
     if (timesClickedSpinach%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--   
     }
     total.innerHTML = cost
 }
@@ -99,10 +102,10 @@ function addTomatoes(){
     document.querySelector('#tomatoes').classList.toggle('hidden')
     timesClickedTomatoes = timesClickedTomatoes + 1
     if (timesClickedTomatoes%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--   
     }
     total.innerHTML = cost
 }
@@ -111,10 +114,10 @@ function addMushrooms(){
     document.querySelector('#mushrooms').classList.toggle('hidden')
     timesClickedMushrooms = timesClickedMushrooms + 1
     if (timesClickedMushrooms%2 == 1) {
-        cost = cost + 1
+        cost++
     }
     else {
-        cost = cost - 1   
+        cost--  
     }
     total.innerHTML = cost
 }
