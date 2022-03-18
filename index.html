@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Pizza picker with JavaScript">
-    	<meta name="keywords" content="pizza">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="https://kit.fontawesome.com/dffbd73515.js" crossorigin="anonymous"></script>
 
-		<title>Pizza Picker!</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Pizza picker with JavaScript" />
+  <meta name="keywords" content="pizza" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/dffbd73515.js" crossorigin="anonymous"></script>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>				
-		<h1>I <i class="fa-solid fa-heart"></i> Pizza!</h1>
-		<section class="choices">
-			<ul>
-				<h3>Choose your toppings:</h3>
-				<li class="toppings" id="choosePepperoni">Pepperoni <span>+$2.00</span></li>
-				<li class="toppings" id="chooseSausage">Sausage <span>+$2.00</span></li>
-				<li class="toppings" id="chooseOlives">Olives <span>+$1.00</span></li>
-				<li class="toppings" id="chooseOnions">Onions <span>+$1.00</span></li>
-				<li class="toppings" id="choosePeppers">Green Peppers <span>+$1.00</span></li>
-				<li class="toppings" id="chooseSpinach"> Spinach <span>+$1.00</span></li>
-				<li class="toppings" id="chooseTomatoes">Tomatoes <span>+$1.00</span></li>
-				<li class="toppings" id="chooseMushrooms">Mushrooms <span>+$1.00</span></li>
-				<li class="toppings" id="choosePineapple">Pineapple <span>+$5.00</span></li>
-				<div class="total">
-					<h3>Total: $ </h3>
-					<h3 id="cost"> </h3>
-				</div>
-			</ul>
-		</section>
-		<section class="pizza">
-			<img src="img/pizza.png" alt="pizza crust" id="cheesePizza">
-			<img src="img/tomatoes.png" alt="tomatoes"  class="hidden" id="tomatoes">
-			<img src="img/pepperoni.png" alt="pepperoni" class="hidden" id="pepperoni">
-			<img src="img/spinach.png" alt="spinach" class="hidden" id="spinach">
-			<img src="img/mushrooms.png" alt="mushrooms" class="hidden" id="mushrooms">
-			<img src="img/peppers.png" alt="peppers" class="hidden" id="peppers">
-			<img src="img/sausage.png" alt="sausages" class="hidden" id="sausage">
-			<img src="img/olives.png" alt="olives" class="hidden" id="olives">
-			<img src="img/onions.png" alt="onions" class="hidden" id="onions">
-			<img src="img/pineapple.png" alt="pineapple" class="hidden" id="pineapple">
-		</section>
-	
+  <title>Pizza Picker!</title>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>I <i class="fa-solid fa-heart"></i> Pizza!</h1>
+  <section class="choices">
+    <ul>
+      <h3>Choose your toppings:</h3>
+      <li class="toppings" id="choosePepperoni">
+        Pepperoni <span>+$2.00</span>
+      </li>
+      <li class="toppings" id="chooseSausage">Sausage <span>+$2.00</span></li>
+      <li class="toppings" id="chooseOlives">Olives <span>+$1.00</span></li>
+      <li class="toppings" id="chooseOnions">Onions <span>+$1.00</span></li>
+      <li class="toppings" id="choosePeppers">
+        Green Peppers <span>+$1.00</span>
+      </li>
+      <li class="toppings" id="chooseSpinach">Spinach <span>+$1.00</span></li>
+      <li class="toppings" id="chooseTomatoes">
+        Tomatoes <span>+$1.00</span>
+      </li>
+      <li class="toppings" id="chooseMushrooms">
+        Mushrooms <span>+$1.00</span>
+      </li>
+      <li class="toppings" id="choosePineapple">
+        Pineapple <span>+$5.00</span>
+      </li>
+      <div class="total">
+        <h3>Total: $</h3>
+        <h3 id="cost"></h3>
+      </div>
+    </ul>
+  </section>
+  <section class="pizza">
+    <img src="img/pizza.png" alt="Pizza crust" id="cheesePizza" />
+    <img src="img/tomatoes.png" alt="Tomatoes" class="hidden" id="tomatoes" />
+    <img src="img/pepperoni.png" alt="Pepperoni" class="hidden" id="pepperoni" />
+    <img src="img/spinach.png" alt="Spinach" class="hidden" id="spinach" />
+    <img src="img/mushrooms.png" alt="Mushrooms" class="hidden" id="mushrooms" />
+    <img src="img/peppers.png" alt="Peppers" class="hidden" id="peppers" />
+    <img src="img/sausage.png" alt="Sausages" class="hidden" id="sausage" />
+    <img src="img/olives.png" alt="Olives" class="hidden" id="olives" />
+    <img src="img/onions.png" alt="Onions" class="hidden" id="onions" />
+    <img src="img/pineapple.png" alt="Pineapple" class="hidden" id="pineapple" />
+  </section>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
